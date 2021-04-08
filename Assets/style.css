@@ -1,0 +1,409 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100vw;
+    z-index: 100;
+}
+
+.logo-cont {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 30px;
+}
+
+.logo {
+    height: auto;
+    width: 150px;
+}
+
+.login-btn,
+.logout-btn {
+    border: none;
+    background-color: #FCBD1B;
+    color: white;
+    font-weight: bolder;
+    font-size: 20px;
+    height: 40px;
+    width: 90px;
+    margin-right: 30px;
+}
+
+.hero {
+    background-image: url('./family-with-cute-dog-.png');
+    height: 100vh;
+    max-width: 100vw;
+    width: 100vw;
+    background-size: cover, contain;
+    background-repeat: no-repeat;
+    background-position: 50% 45%;
+}
+
+.hero-sub {
+    background-image: url('./blackgold.png');
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 45%;
+    transform: translateX(-5px);
+}
+
+.greetings {
+    margin-left: 100px;
+    padding-top: 150px;
+}
+
+.greet {
+    font-size: 25px;
+    color: white;
+    margin-left: 10px;
+}
+
+.tagline {
+    margin-top: 60px;
+    font-size: 50px;
+    font-weight: normal;
+    line-height: 30px;
+    color: #FCBD1B;
+}
+
+.register {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    margin-top: 200px;
+}
+
+.join {
+    color: white;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.reg-link-cont {
+    border-bottom: 1px solid #FCBD1B;
+    padding-top: 5px;
+    padding-bottom: 2px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.reg-link {
+    text-decoration: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 30px;
+}
+
+.account {
+    display: none;
+    padding-top: 80px;
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
+    color: white;
+}
+
+.account-cont{
+    display: flex;
+    flex-direction: column;
+    margin: 100px 200px;
+    background-color: #242525;
+}
+
+.account-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.title {
+    font-size: 30px;
+    margin-left: 50px;
+}
+
+.section2,
+.section3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.personal-cont {
+    margin-top: 20px;
+    background-color: #484B49;
+    display: flex;
+    align-items: center;
+}
+
+.image-cont{
+    display: flex;
+    flex-direction: column;
+}
+
+.image {
+    height: auto;
+    width: 100px;
+    margin: 20px 20px;
+}
+
+.image-btn {
+    text-decoration: underline;
+    background: none;
+    border: none;
+    color: #FCBD1B;
+    margin-bottom: 10px;
+}
+
+.name-cont {
+    margin-right: 20px;
+}
+
+.user-name {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.welcome {
+    font-size: 25px;
+    margin-right: 25%
+}
+
+.button-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 100px;
+}
+
+.action-btn {
+    margin: 20px;
+}
+
+.action-btn button {
+    width: 200px;
+    text-decoration: none;
+    background: none;
+    border: none;
+    color: #FCBD1B;
+}
+
+.deposit {
+    margin-top: 20px;
+}
+
+.send {
+    margin-bottom: 20px;
+}
+
+.sub-section3 {
+    display: flex;
+    flex-direction: column;
+}
+
+table, 
+td {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.table-cont {
+    margin-right: 200px;
+    margin-top: -150px;
+    background-color: white;
+    border-radius: 20px;
+    color: black;
+}
+
+table {
+    padding: 5px;
+    margin: 15px;
+}
+
+th {
+    text-align: center;
+    border-left: 1px solid black;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.current {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.current-text {
+    margin-left: 10px;
+}
+
+.current-value {
+    margin-right: 220px;
+}
+/* The Modal (background) */
+
+.reg-cont,
+.login-cont, 
+.deposit-cont,
+.withdraw-cont,
+.send-cont  {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100vw; /* Full width */
+    height: 100vh; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    padding-left: 10px;
+}
+  
+  /* Modal Content */
+.create {
+    background-color: #242525;
+    margin: auto;
+    padding: 20px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+::placeholder {
+    color: white;
+}
+
+.create-header {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    color: white;
+    padding-bottom: 10px;
+}
+
+.create-input {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    width: 60%;
+    height: 40px;
+    border: 1px solid white;
+    background-color: #484B49;
+    color: white;
+    padding-left: 10px;
+    margin-top: 5px;
+}
+
+.create-input:hover,
+.create-input:focus {
+    border: 3px solid #FCBD1B;
+    border-radius: 10px;
+}
+
+
+label {
+    margin-top: 40px;
+    margin-left: 20%;
+    margin-bottom: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    color: white;
+    align-self: flex-start;
+}
+
+  /* The Close Button */
+.closeReg,
+.closeLog,
+.closeDeposit,
+.closeWithdraw,
+.closeSend {
+    color: white;
+    align-self: flex-end;
+    font-size: 35px;
+    font-weight: bold;
+    margin-right: 15px;
+    border: 1px solid white;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 50%;
+}
+
+.closeReg:hover,
+.closeReg:focus,
+.closeLog:hover,
+.closeLog:focus,
+.closeDeposit:hover,
+.closeDeposit:focus,
+.closeWithdraw:hover,
+.closeWithdraw:focus,
+.closeSend:hover,
+.closeSend:focus {
+    color: #FCBD1B;
+    text-decoration: none;
+    cursor: pointer;
+    border: 1px solid #FCBD1B;
+}
+
+.register-btn,
+.log-btn,
+.logout-btn,
+.deposit-btn,
+.withdraw-btn,
+.send-btn {
+    border: none;
+    background-color: #FCBD1B;
+    color: black;
+    font-weight: bolder;
+    font-size: 20px;
+    text-align: center;
+    height: 40px;
+    width: 150px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.register-btn:hover,
+.register-btn:focus,
+.log-btn:hover,
+.log-btn:focus,
+.logout-btn:hover,
+.logout-btn:focus,
+.deposit-btn:hover,
+.deposit-btn:focus,
+.withdraw-btn:hover,
+.withdraw-btn:focus,
+.send-btn:hover,
+.send-btn:focus {
+    background-color: yellow
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+}

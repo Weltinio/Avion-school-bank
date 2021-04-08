@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./Assets/style.css" rel="stylesheet">
+    <title>ExBanking</title>
+</head>
+<body>
+    <!-- Landing Page -->
+    <header>
+        <div class="logo-cont">
+            <img src="./Assets/ASB_Bank_logo_yellow.png" class="logo">
+        </div>
+        <button class="login-btn">Log In</button>
+    </header>
+    <div class="hero">
+        <div class="hero-sub">
+            <div class="greetings">
+                <p class="greet"> Greetings! </p>
+                <p class="tagline">
+                    With a bank,
+                </p>
+                <p class="tagline">
+                    you're a customer.
+                </p>
+                <p class="tagline">
+                    With ASB you're FAMILY! 
+                </p>
+            </div>
+            <div class="register">
+                <p class="join"> Join us </p>
+                <div class="reg-link-cont"><button class='reg-link'> Register Now </button></div>
+            </div>
+        </div>
+
+            <!-- End of Landing page -->
+            
+            <!-- Start of Modal for landing page -->
+
+        <section class="reg-cont">
+            <div class="create">
+                <span class="closeReg">&times;</span>
+                <p class="create-header"> Register </p>
+                <label for="username">Username:</label>
+                <input id="username" class="create-input" autocomplete="false" type="text" placeholder="Enter your Username here">
+                <label for="password">Password:</label>
+                <input id="password" class="create-input" type="password" placeholder="Enter Password">
+                <label for="confirm">Confirm Password:</label>
+                <input id="confirm" class="create-input" type="password" placeholder="Confirm Password">
+                <button class="register-btn">Register</button>
+            </div>
+        </section>
+        <section class="login-cont">
+            <div class="create">
+                <span class="closeLog">&times;</span>
+                <p class="create-header"> Login </p>
+                <label for="username1">Username:</label>
+                <input id="username1" class="create-input" autocomplete="false" type="text" placeholder="Enter your Username here">
+                <label for="password1">Password:</label>
+                <input id="password1" class="create-input" type="password" placeholder="Enter Password">                
+                <button class="log-btn">Login</button>
+            </div>
+        </section>
+
+        <!-- End of Modal for landing page -->
+
+    </div>
+
+
+    <!-- Start of account page -->
+
+    <section class="account">
+        <div class="account-cont">
+            <div class="account-header">
+                <p class="title">My Account</p>
+                <button class="logout-btn">Log Out</button>
+            </div>
+            <div class="section2">
+                <div class="personal-cont">
+                    <div class="image-cont">
+                        <img class="image" src="./Assets/istockphoto-476085198-612x612.jpg">
+                        <button class="image-btn">Edit Photo</button>
+                    </div>
+                    <div class="name-cont">
+                        <div class="personal-info">
+                            <p class="personal-title"> Account Name: </p>
+                            <p class="user-name"> John Doe </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="welcome">
+                    Welcome!
+                </div>
+            </div>
+            <div class="section3">
+                <div class="button-cont">
+                    <div class="action-btn">
+                        <button class="deposit">Deposit</button>
+                    </div>
+                    <div class="action-btn">
+                        <button class="withdraw">Withdraw</button>
+                    </div>
+                    <div class="action-btn">
+                        <button class="send">Send Money</button>
+                    </div>
+                </div>
+                <div class="sub-section3">
+                    <div class="table-cont">
+                        <table class="table">
+                            <tr class="table-head">
+                                <th>DATE</th>
+                                <th>CODE</th>
+                                <th>WITHDRAWALS</th>
+                                <th>DEPOSITS</th>
+                                <th>BALANCE</th>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="current">
+                        <p class="current-text">Currrent Balance: PHP</p>
+                        <p class="current-value">0.00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- start of button page -->
+
+            <section class="deposit-cont">
+                <div class="create">
+                    <span class="closeDeposit">&times;</span>
+                    <p class="create-header">Deposit</p>
+                    <label for="deposit">Amount</label>
+                    <input id="deposit" class="create-input" type="number" min="1" placeholder="Enter amount here">              
+                    <button class="deposit-btn">Deposit</button>
+                </div>
+            </section>
+            <section class="withdraw-cont">
+                <div class="create">
+                    <span class="closeWithdraw">&times;</span>
+                    <p class="create-header">Withdraw</p>
+                    <label for="withdraw">Amount</label>
+                    <input id="withdraw" class="create-input" type="number" min="1" placeholder="Enter amount here">              
+                    <button class="withdraw-btn">Withdraw</button>
+                </div>
+            </section>
+            <section class="send-cont">
+                <div class="create">
+                    <span class="closeSend">&times;</span>
+                    <p class="create-header">Send Money</p>
+                    <label for="recipient">Recipient</label>
+                    <input id="recipient" class="create-input" type="text" placeholder="Enter recipient name here">  
+                    <label for="send">Amount</label>
+                    <input id="send" class="create-input" type="number" min="1" placeholder="Enter amount here">              
+                    <button class="send-btn">Transfer</button>
+                </div>
+            </section>
+    </section>
+
+    <!-- end of account page -->
+
+    <script src="script.js"></script>
+</body>
+</html>
